@@ -17,16 +17,31 @@
 
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="colorPrimaryDark">@color/indigo_700</item>
+        <item name="colorAccent">@color/pink_a200</item>
+        <item name="android:textColorPrimary">@color/blue_grey_700</item>
     </style>
 
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <style name="ListTitle" parent="@style/TextAppearance.AppCompat.Subhead" />
+
+    <style name="ListSubtitle" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/list_subtitle</item>
     </style>
 
-    <style name="frame_background" parent="Theme.AppCompat">
-        <item name="android:background">@color/A400</item>
+    <style name="ArticleTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/detail_title_text_size</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="ArticleByLine" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ArticleBody">
+        <item name="android:textColor">@color/blue_grey_700</item>
+        <item name="android:textSize">@dimen/detail_body_text_size</item>
+    </style>
 </resources>

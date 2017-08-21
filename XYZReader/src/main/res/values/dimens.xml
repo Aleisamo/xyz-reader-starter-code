@@ -7,8 +7,14 @@
     <dimen name="fab_press_translation_z">16dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
     <dimen name="toolbar_height">40dp</dimen>
-    <dimen name="toolbar_container_height">112dp</dimen>
+    <dimen name="toolbar_container_height">70dp</dimen>
     <dimen name="toolbar_container_elevation">8dp</dimen>
-
-
+    <dimen name="recycle_view_padding_top">95dp</dimen>
+    <dimen name="recycle_view_padding_bottom">28dp</dimen>
+    <dimen name="image_view_margin_top">16dp</dimen>
+    <dimen name="image_view_margin_left">10dp</dimen>
+    <dimen name="list_item_padding_bottom">4dp</dimen>
+    <dimen name="card_view_margin">4dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+    <dimen name="image_button_height">56dp</dimen>
 </resources>

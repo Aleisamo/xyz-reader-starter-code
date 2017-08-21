@@ -5,7 +5,8 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/list_background"/>
 
     <FrameLayout
         android:id="@+id/up_container"
@@ -16,7 +17,7 @@
         <ImageButton
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             android:id="@+id/action_up"
-            android:layout_width="56dp"
+            android:layout_width="@dimen/image_button_height"
             android:layout_height="?actionBarSize"
             android:background="?selectableItemBackgroundBorderless"
             android:contentDescription="@string/up"
