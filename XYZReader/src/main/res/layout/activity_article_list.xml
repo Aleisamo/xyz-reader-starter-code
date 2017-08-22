@@ -12,10 +12,10 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_container_height"
+            android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/list_toolbar_side_margin"
             android:layout_marginRight="@dimen/list_toolbar_side_margin"
-            app:layout_scrollFlags="scroll|enterAlways">
+            app:layout_scrollFlags="scroll|snap">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -24,27 +24,27 @@
                 android:layout_marginTop="@dimen/image_view_margin_top"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/logo" />
-        </android.support.v7.widget.Toolbar>
 
+        </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="492dp"
             android:clipToPadding="false"
             android:paddingBottom="@dimen/recycle_view_padding_bottom"
             android:paddingLeft="@dimen/list_side_margin"
             android:paddingRight="@dimen/list_side_margin"
             android:paddingTop="@dimen/recycle_view_padding_top"
-            android:scrollbarStyle="outsideOverlay" />
+            android:scrollbarStyle="outsideInset" />
     </android.support.v4.widget.SwipeRefreshLayout>
-
 </android.support.design.widget.CoordinatorLayout>
 
 
